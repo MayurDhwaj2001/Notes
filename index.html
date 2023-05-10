@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Notes!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <div class="recent" onclick="get(0)" id="d0">
+      <form class="form__contact">
+        <fieldset id="n1">
+          <div class="close" onclick="del(0)"><i class="fa fa-scissors "></i></div>
+          <h4 class="nopm" id="t0">Note</h4>
+        </fieldset>
+      </form>
+    </div>
+    <div class="recent" onclick="get(1)" id="d1">
+      <form class="form__contact">
+        <fieldset id="n1">
+          <div class="close" onclick="del(1)"><i class="fa fa-scissors "></i></div>
+          <h4 class="nopm" id="t1">Note</h4>
+        </fieldset>
+      </form>
+    </div>
+    <div class="recent" onclick="get(2)" id="d2">
+      <form class="form__contact">
+        <fieldset id="n1">
+          <div class="close" onclick="del(2)"><i class="fa fa-scissors "></i></div>
+          <h4 class="nopm" id="t2">Note</h4>
+        </fieldset>
+      </form>
+    </div>
+    <div class="recent" onclick="get(3)" id="d3">
+      <form class="form__contact">
+        <fieldset id="n1">
+          <div class="close" onclick="del(3)"><i class="fa fa-scissors "></i></div>
+          <h4 class="nopm" id="t3">Note</h4>
+        </fieldset>
+      </form>
+    </div>
+    <div class="recent" onclick="get(4)" id="d4">
+      <form class="form__contact">
+        <fieldset id="n1">
+          <div class="close" onclick="del(4)"><i class="fa fa-scissors "></i></div>
+          <h4 class="nopm" id="t4">Note</h4>
+        </fieldset>
+      </form>
+    </div>
+
+
+  </div>
+  <div class="wrapper">
+    <h1>Notes!</h1>
+
+    <form class="form__contact">
+      <fieldset>
+        <!-- <p>Hey, Stranger!</p> -->
+        <p><span class="form__field field--message" data-placeholder="Title" tabindex="2" id="title"
+            contenteditable></span>
+        </p>
+        <p><span class="form__field field--message" data-placeholder="Notes..." tabindex="2" id="notes"
+            contenteditable></span></p>
+
+        <button type="button" class="button button--xlarge" onclick="upload(no)" tabindex="4">Save &#187;</button>
+        <!-- <button type="button" class="button button--xlarge" onclick="get()" tabindex="4">Get &#187;</button> -->
+      </fieldset>
+    </form>
+  </div>
+
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
